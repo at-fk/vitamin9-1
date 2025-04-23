@@ -5,7 +5,7 @@ function App() {
 
   const fetchQuote = async () => {
     try {
-      const response = await fetch('https://flack-backend.onrender.com');
+      const response = await fetch('https://flack-backend.onrender.com/api/quote');
       const data = await response.json();
       setQuote(data.quote);
     } catch (error) {
